@@ -40,4 +40,4 @@ models:
       +materialized: table
 
     staging:
-      +materialized: view
+      +materialized: table
