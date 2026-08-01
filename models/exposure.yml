@@ -1,0 +1,21 @@
+version: 2
+
+exposures:
+
+  - name: weekly_metrics
+    label: Mahesh Weekly Dashboard
+    type: dashboard
+    maturity: high
+    description: |
+      Weekly dashboard for project metrics.
+
+    depends_on:
+      - ref('append_orders')
+      - ref('customers')
+      - ref('emp_seed_new')
+      - ref('final_business')
+      - ref('orders_dev')
+
+    owner:
+      name: Mahesh
+      email: bmahesh7828@gmail.com
