@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: datafeed_shared_schema
+    database: di_sales
+    schema: raw_schema
+
+    tables:
+      - name: raw_customerdata
+      - name: orders
+      - name: customers
