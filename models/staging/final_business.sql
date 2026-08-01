@@ -10,7 +10,7 @@ with customers as (
 
 orders as (
     select *
-    from {{ ref('orders') }}
+    from {{ ref('orders_dev') }}
 ),
 
 customer_orders as (
